@@ -28,6 +28,10 @@ nav {
   flex: 0 1 60%;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 .nav-items {
   list-style: none;
   display: flex;
@@ -265,6 +269,55 @@ nav {
   .section-1 {
     flex-direction: column;
   }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px; /* zavisi od visine headera */
+    right: 10px;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .nav-item{
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 0.3em;
+    padding: 0.5em;
+    border-radius: 10px;
+  }
+
+  .nav-item:last-of-type{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-items.show {
+    display: flex; /* kad klikneš, pojavi se */
+  }
+
+  .mobile-nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  header img{
+    width: 30%;
+  }
+
+
+  .mobile-nav i{
+    font-size: 1.8rem;
+  }
+
 
   .section-1-left h1,
   .paragraph {
